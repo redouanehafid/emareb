@@ -1,0 +1,93 @@
+<footer id="footer">
+			<!-- footer holder of the page -->
+			<div class="footer-holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<h3 class="text-uppercase">EMARéB</h3>
+							<p>EMARéB met à votre disposition une équipe de professionnel pour vous conseiller afin de trouver pour vous, la solution la mieux adaptée sur le plan technique, qualitatif, esthétique et économique.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<h3 class="text-uppercase">CONTACT</h3>
+							<!-- contact list of the page -->
+							<ul class="list-unstyled contact-list">
+								<li>
+									<span><%= fa_icon "address-card" %></span>
+									<address>Bd Allal Al Fassi Villa N 989 <br>Secteur 5 Hay Salam Salé 11030</address>
+								</li>
+								<li>
+									<span><%= fa_icon "envelope" %></span>
+									<a href="mailto:&#105;&#110;&#102;&#111;&#046;&#100;&#101;&#101;&#114;&#099;&#114;&#101;&#097;&#116;&#105;&#118;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#046;&#100;&#101;&#101;&#114;&#099;&#114;&#101;&#097;&#116;&#105;&#118;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+								</li>
+								<li>
+									<span><%= fa_icon "phone" %></span>
+									<a href="tel:18005596580">066115 5615</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<h3 class="text-uppercase">Heure de travail</h3>
+							<!-- hour list of the page -->
+							<ul class="list-unstyled hour-list">
+								<li>Notre support  24 / 7</li>
+								<li>Lundi – Vendredi: 9am-6pm</li>
+								<li>Samedi: 10am-4pm</li>
+								<li>Dimanche: 10am-1pm</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<h3 class="text-uppercase">Souscrire</h3>
+							<p>Abonnez-vous à notre liste de diffusion pour obtenir les mises à jour dans votre boîte de réception.</p>
+							<!-- subscribe form of the page -->
+							<form action="#" class="subscribe-form">
+								<fieldset>
+									<input type="email" class="form-control" placeholder="your email here">
+									<button type="submit"><i class="fa fa-paper-plane-o"></i></button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer area of the page -->
+			<div class="footer-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<p>Copyrights © 2018 Tous Droits Réservés. Développé Par InovaProWeb.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<!-- Socail network of the page -->
+							<ul class="socail-network list-unstyled">
+								<li><a href="#"><%= fa_icon "facebook" %></a></li>
+								<li><a href="#"><%= fa_icon "linkedin" %></a></li>
+								<li><a href="#"><%= fa_icon "twitter" %></a></li>
+								<li><a href="#" class="fa fa-google-plus"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- back top of the page -->
+		<span id="back-top" class="text-center md-round fa fa-caret-up"></span>
+		<!-- loader of the page -->
+		
+		<div class="popup-holder">
+		<div id="popup1" class="lightbox">
+			<%= form_for(:user, :html => {class: 'signup-form text-center' }, :url => session_path(:user)) do |f| %>
+				<fieldset>
+					<h2>Connectez-vous <span class="clr">EMARéB</span></h2>
+					<p>Entrez vos coordonnées ci-dessous.</p>
+					<div class="form-group">
+						<%= f.text_field :email, :class =>"form-control",placeholder: "Email", value:"" %>
+						<%= f.password_field :password,:label =>"Password", :class =>"form-control", placeholder:"Password", value:""%>
+					</div>
+					 <%= f.submit 'Login', :class =>"btn text-center text-uppercase" %><br>
+		          	 <%= f.check_box :remember_me, label: "Remember me", value: "true" %>
+		          	 <%= f.label :remember_me %>
+				</fieldset>
+			<% end %>
+		</div>
+	</div>
+		

@@ -1,0 +1,14 @@
+<%= simple_form_for @application do |f| %>
+  <%= f.input :nom %>
+  <%= f.input :prenom %>
+  <%= f.input :adresse %>
+  <%= f.input :codepostal %>
+  <%= f.input :ville %>
+  <%= f.input :telephone %>
+  <%= f.input :email %>
+  <%= f.input :message %>
+  <%= f.file_field :cv %>
+  <%= f.file_field :lettre %>
+  <br>
+  <%= f.button :submit, class: "btn text-center text-uppercase" %>
+<% end %>

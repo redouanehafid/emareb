@@ -1,0 +1,96 @@
+   <%= render 'layouts/menu' %>
+<main id="main">
+			<!-- banner of the page -->
+			<section class="banner bg-full overlay back31">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h1 class="main-heading3 text-uppercase">nous visons la qualité et le travail irréprochable</h1>
+							<!-- breadcrumbs of the page -->
+							<nav class="breadcrumbs text-center">
+								<ul class="list-unstyled">
+									<li><a href="<%= root_path %>">Acceuil</a></li>
+									<li>></li>
+									<li>Nos Metiers</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="work-sec container">
+				<div class="row">
+					<div class="col-xs-12 header text-center">
+						<h2 class="main-heading2 text-uppercase">Nos Metiers</h2>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<!-- work slider of the page -->
+						<div class="work-slider">
+
+							<!-- slide of the page -->
+							<div class="slide">
+								<div class="img-holder">
+									<%= image_tag('manag.jpg', alt: "image description", class: "img-responsive") %>
+								</div>
+								<div class="txt-holder">
+									<h4 class="text-uppercase">Facility Management</h4>
+									<p>EMAREB vous propose ses services de Facility Management, soit une gestion globale de tous vos équipements techniques avec un interlocuteur unique et une organisation à taille humaine.</p>
+									<a href="<%= facility_path %>" class="read-more text-uppercase">Lire la suite</a>
+								</div>
+							</div>
+							<!-- slide of the page -->
+							<div class="slide">
+								<div class="img-holder">
+									<img src="http://placehold.it/570x350" alt="image description" class="img-responsive">
+								</div>
+								<div class="txt-holder">
+									<h4 class="text-uppercase">Climatisation</h4>
+									<p>Travaux sur bâtiments neufs ou rénovations</p>
+									<p>Maintenance et l’Exploitation des installations techniques</p>
+									<a href="<%= climatisation_path %>" class="read-more text-uppercase">Lire la suite</a>
+								</div>
+							</div>
+							<!-- slide of the page -->
+							<div class="slide">
+								<div class="img-holder">
+									<img src="http://placehold.it/570x350" alt="image description" class="img-responsive">
+								</div>
+								<div class="txt-holder">
+									<h4 class="text-uppercase">Installation</h4>
+									<p>Une équipe hautement qualifiée, regroupant ingénieurs, techniciens, dessinateurs et monteurs, est à votre service afin d'étudier et d'installer des systèmes de chauffage, de ventilation et de climatisation dans tous types d'immeubles résidentiels ou industriels.</p>
+									<a href="<%= instalation_path %>" class="read-more text-uppercase">Lire la suite</a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="img-holder">
+									<img src="http://placehold.it/570x350" alt="image description" class="img-responsive">
+								</div>
+								<div class="txt-holder">
+									<h4 class="text-uppercase">Maintenance</h4>
+									<p>La fiabilité d'une compagnie de maintenance et de services est sans cesse mise à l'épreuve. </p>
+									<a href="<%= maintenance_path %>" class="read-more text-uppercase">Lire la suite</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<div class="promo-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-9">
+							<p>
+								NOUS OFFRONS UN SERVICE RAPIDE ET ABORDABLE POUR VOS PROJETS!</p>
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<a href="<%= contact_path %>" class="btn text-center text-uppercase">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>

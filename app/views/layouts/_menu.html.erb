@@ -1,0 +1,113 @@
+
+<!-- header of the page -->
+		<header id="header" class="style3">
+			<!-- header area of the page -->
+			<div class="header-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<ul class="contact-list list-unstyled">
+								<li><i><%= fa_icon "phone" %></i>066115 5615</li>
+								<li><i><%= fa_icon "envelope" %></i>infos@emareb.ma</li>
+							</ul>
+							<ul class="sign-up list-unstyled">
+								<% if user_signed_in? %>
+								<li><a href="<%= motdg_path %>" class="lightbox"><%= fa_icon "user" %> Abdelah Mahdaoui </a></li>
+								<li><%= link_to (fa_icon "power-off"), destroy_user_session_path, method: :delete %></li>
+								<% else %>
+								<li><a href="#popup1" class="lightbox">Administration</a></li>
+								<% end %>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- Button trigger modal -->
+
+
+
+
+
+			<!-- header holder of the page -->
+			<div class="header-holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- logo of the page -->
+							<div class="logo">
+							<a href="<%= root_path %>"><%= image_tag("logo.png", alt: "emareb", class: "img-responsive") %></a>
+							</div>
+							<a href="#" class="nav-opener text-center md-round"><i class="fa fa-bars"></i></a>
+							<!-- nav of the page -->
+							<nav id="nav">
+								<ul class="list-unstyled">
+
+							
+							<li class="active">
+										<a href="#">A PROPOS</a>
+										<ul class="list-unstyled drop-down">
+											<li>
+												<a href="<%= about_path(page:"qui-sommes-nous") %>">QUI SOMMES NOUS</a>
+											</li>
+											<li><a href="<%= about_path(page:"notre-vision") %>">NOTRE VISION</a></li>
+											<li><a href="<%= about_path(page:"vos-benefices") %>">VOS BENEFICES</a></li>
+										</ul>
+							</li>
+							<li><a href="<%= motdg_path %>">MOT DU DG</a></li>
+							<li>
+								<a href="<%= nosmetiers_path %>">Nos Metiers</a>
+								<ul class="list-unstyled drop-down">
+											<li>
+												<a href="<%= facility_path %>">Facility Management</a>
+											</li>
+											<li>
+												<a href="<%= prestation_path %>">Prestations Facility Management </a>
+											</li>
+											<li><a href="<%= climatisation_path %>">Climatisation</a></li>
+											<li><a href="<%= instalation_path %>">Installation</a></li>
+											<li><a href="<%= maintenance_path %>">Maintenance</a>
+											<li><a href="<%= maintenancep_path %>">Maintenance préventive</a>
+											<li><a href="<%= maintenancec_path %>">Maintenance curative</a>
+											</li>
+										</ul>
+								
+							</li>
+							<li>
+								<a href="<%= projects_path %>">NOS REFERENCES</a>
+								
+							</li>
+							<li>
+								<a href="#">Nous Rejoindre</a>
+								<ul class="list-unstyled drop-down">
+											<li>
+												<a href="<%= politique_path %>">NOTRE POLITIQUE RH</a>
+											</li>
+											<li>
+												<a href="<%= offres_path %>">NOS OFFRES</a>
+											</li>
+											<li><a href="<%= new_application_path %>">VOTRE CANDIDATURE</a></li>
+											</li>
+              								<% if user_signed_in? %>
+											<li><a href="<%= applications_path %>">Liste des Candidatures </a></li>
+											<% end %>
+										</ul>
+								
+							</li>
+							
+							<li><a href="<%= contact_path %>">Contact </a></li>
+
+
+
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+	

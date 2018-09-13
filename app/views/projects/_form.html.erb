@@ -1,0 +1,10 @@
+<%= simple_form_for @project do |f| %>
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.input :client %>
+  <%= f.input :surface %>
+  <%= f.input :lieu %>
+  <%= f.file_field :image %>
+  <br>
+  <%= f.button :submit, class: "btn text-center text-uppercase" %>
+<% end %>

@@ -1,0 +1,170 @@
+<%= render 'layouts/menu' %>
+
+<main id="main">
+			<!-- main slider of the page -->
+			<!-- main slider of the page -->
+			<section class="main-slider slider3">
+				<!-- slide of the page -->
+				<div class="slide bg-full overlay back3">
+					<div class="caption text-center">
+						<h1 class="text-uppercase">NOUS VOUS PROPOSONS DES SERVICES</h1>
+						<p>nous visons la qualité et le travail irréprochable</p>
+						<a href="<%= contact_path %>" class="btn active text-center text-uppercase">CONTACT</a>
+					</div>
+					
+				</div>
+				<!-- slide of the page -->
+				<div class="slide bg-full overlay back2">
+					<div class="caption text-center">
+						<h1 class="text-uppercase">NOUS N'ARRÊTONS JAMAIS D'AMÉLIORER</h1>
+						<p>Venez de trouver votre sosiéte<strong> Emareb </strong></p>
+						<a href="#" class="btn active text-center text-uppercase">NOUS REJOINDRE</a>
+					</div>
+				</div>
+				<!-- slide of the page -->
+				<div class="slide bg-full overlay back1">
+					<div class="caption text-center">
+						<h1 class="text-uppercase">NOUS SOMMES PASSIONNÉS</h1>
+						<p>FIABLES,HONNÊTES ET INDÉPENDANTS</p>
+						<a href="<%= nosmetiers_path %>" class="btn active text-center text-uppercase">NOS METIERS</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="promo-box style2 md-round container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8">
+						<p>NOUS SOMMES OUVERTS 24/7/365 PARCE QUE DES URGENCES DE PLOMBERIE</p>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<a href="tel:18006548745" class="call text-center md-round">+(1800) 654 8745</a>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- blog sec of the page -->
+			<section class="blog-sec container pad-t">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h3 class="main-heading text-uppercase">EMARéB TRAVAUX DIVERS</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<!-- blog of the page -->
+						<div class="blog">
+							<div class="img-holder">
+								<%= image_tag('P.jpeg', alt: "image description", class: "img-responsive") %>
+								<div class="over">
+									<a href="blog-detail.html"><span></span></a>
+								</div>
+							</div>
+							<div class="txt-holder">
+								<h3 class="text-uppercase"><a href="blog-detail.html">NOUS SOMMES PASSIONNÉS</a></h3>
+								
+								<p>Nous sommes une société ayant réalisé de nombreux chantier en maroc avec succès. Nous assurons la réalisation de projets avec un maximum de professionnalisme utilisant la qualité environnementale des matériaux</p>
+								<a href="<%= nosmetiers_path %>" class="read-more text-uppercase">Nos Metiers</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<!-- blog of the page -->
+						<div class="blog">
+							<div class="img-holder">
+								<%= image_tag('P1.jpeg', alt: "image description", class: "img-responsive") %>
+								<div class="over">
+									<a href="blog-detail.html"><span></span></a>
+								</div>
+							</div>
+							<div class="txt-holder">
+								<h3 class="text-uppercase"><a href="blog-detail.html">FIABLES, HONNÊTES ET INDÉPENDANTS</a></h3>
+								
+								<p>Parce que pour nous, l'honnêté et la fiabilité est une politique d'entreprise incontournable dans le succès, nous respectons scrupuleusement les projets avec ces principes et avec intégrité</p>
+								<a href="<%= projects_path %>" class="read-more text-uppercase">Nos Referances</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<!-- blog of the page -->
+						<div class="blog">
+							<div class="img-holder">
+								<%= image_tag('P2', alt: "image description", class: "img-responsive") %>
+								<div class="over">
+									<a href="blog-detail.html"><span></span></a>
+								</div>
+							</div>
+							<div class="txt-holder">
+								<h3 class="text-uppercase"><a href="blog-detail.html">NOUS N'ARRÊTONS JAMAIS</a></h3>
+								
+								<p>On se contraint nous mêmes de sans cesse s'amélioré : Alors des réunions interminables et une recherche qualité / développement en interne pousse et booste notre entreprise à s'améliorer</p>
+								<a href="blog-detail.html" class="read-more text-uppercase">Nous Rejoindre</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			
+			
+			<!-- help  sec of the page -->
+			<section class="help-sec bg-full back4 ">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6">
+							<div class="holder ">
+								<h3 class="main-heading text-uppercase">NOUS SOMMES TOUJOURS PRÊTS <br>POUR VOUS AIDER</h3>
+								<p>Il y a plusieurs façons de nous contacter. Vous pouvez nous envoyer une ligne, nous appeler ou envoyer un email, choisir ce qui vous convient le mieux.</p>
+								<a href="<%= contact_path %>" class="btn active text-center text-uppercase">Contact</a>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="img-holder">
+								<%= image_tag('img13.png', alt: "image description", class: "img-responsive") %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+			<!-- client sec of the page -->
+			<div class="client-sec container">
+				<div class="row">
+					<div class="col-xs-12 line-box">
+						<div class="col-xs-12 text-center">
+						<h3 class="main-heading">NOS REFERENCES</h3>
+					</div>
+						<!-- client logo of the page -->
+						<ul class="list-unstyled client-logo line ">
+							<li><%= image_tag('r1.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r2.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r3.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r4.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r5.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r6.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r7.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r8.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r9.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+							<li><%= image_tag('r10.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="promo-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-9">
+							<p>
+								NOUS OFFRONS UN SERVICE RAPIDE ET ABORDABLE POUR VOS PROJETS!</p>
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<a href="<%= contact_path %>" class="btn text-center text-uppercase">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</main>

@@ -1,0 +1,80 @@
+
+<%= render 'layouts/menu' %>
+<main id="main">
+			<!-- banner of the page -->
+			<section class="banner bg-full overlay" style="background-image: url(http://placehold.it/1920x350);">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h1 class="main-heading3 text-uppercase">VOTRE CANDIDATURE</h1>
+							
+							<!-- breadcrumbs of the page -->
+							<nav class="breadcrumbs text-center">
+								<ul class="list-unstyled">
+									<li><a href="<%= root_path %>">Acceuil</a></li>
+									<li>></li>
+									<li><a href="<%= nosmetiers_path %>">Nos metiers</a></li>
+									<li>></li>
+									<li>CANDIDAT</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Service detail of the page -->
+			<section class="service-detail container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8">
+						<h2>Nouvelle candidature</h2>
+				<fieldset>
+					<div class="form-group">
+						<% flash.each do |key, value| %>
+							<div class="">
+								<div class="alert alert-<% if key == "notice" %><%= "info" %><% else %><%= key %><% end %>"><%= value %>
+
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								</div>
+							</div>
+						<% end %>
+						<%= render 'form' %>									
+					</div>
+				</fieldset>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="widget">
+							<ul class="side-nav list-unstyled">
+								<li><a href="<%= politique_path %>">Notre politique</a></li>
+								<li><a href="<%= prestation_path %>">Nos offres</a></li>
+								<li><a href="<%= new_application_path %>">Condidature</a></li>
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+
+			</section>
+			<!-- promo box of the page -->
+			<div class="promo-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-9">
+							<p>Looking for best partner for your next construction works?</p>
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<a href="#" class="btn text-center text-uppercase">HIRE US NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+
+
+
+
+
+

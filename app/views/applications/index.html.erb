@@ -1,0 +1,108 @@
+
+<%= render 'layouts/menu' %>
+<main id="main">
+			<!-- banner of the page -->
+			<section class="banner bg-full overlay" style="background-image: url(http://placehold.it/1920x350);">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h1 class="main-heading3 text-uppercase">Liste des  CANDIDATURES</h1>
+							
+							<!-- breadcrumbs of the page -->
+							<nav class="breadcrumbs text-center">
+								<ul class="list-unstyled">
+									<li><a href="<%= root_path %>">Acceuil</a></li>
+									<li>></li>
+									<li><a href="<%= nosmetiers_path %>">Nos metiers</a></li>
+									<li>></li>
+									<li>CANDIDAT</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Service detail of the page -->
+			<section class="service-detail container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8">
+						<h2>Liste des candidatures</h2>
+				<fieldset>
+					
+						<table class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col">Prenom</th>
+						      <th scope="col">Nom</th>
+						      <th scope="col">Telephone</th>
+						      <th scope="col">Email</th>
+						      <th scope="col">CV</th>
+						      <th scope="col">Lettre</th>
+						      <th scope="col">Action</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						  	<% @applications.each do |application| %>
+							  	<tr>
+							  	
+							      <th scope="col"><%= application.prenom %></th>
+							      <th scope="col"><%= application.nom %></th>
+							      <th scope="col"><%= application.telephone %></th>
+							      <th scope="col"><%= application.email %></th>
+							      <th scope="col"><%= link_to "CV", application.cv.url(:original), class: "btnc btnc1" %></th>
+							      <th scope="col"><%= link_to "Lettre", application.lettre.url(:original), class: "btnc btnc1" %></th>
+							      <th scope="col"><%= link_to "Voir", application, class: "btnc btnc1" %> <%= link_to 'Suprimer', application, method: :delete, data: { confirm: 'Are you sure?' }, class: "btnc btnc2" %>  </th>
+							     
+						    </tr>
+						    <% end %>
+						  </tbody>
+						</table>
+
+					
+
+
+
+
+
+
+
+
+				</fieldset>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="widget">
+							<ul class="side-nav list-unstyled">
+								<li><a href="<%= new_offre_path %>">Ajouter une nouvelle Offre</a></li>
+								<li><a href="<%= new_project_path %>">Ajouter un nouveau projet</a></li>
+								
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+
+			</section>
+			<!-- promo box of the page -->
+			<div class="promo-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-9">
+							<p>Looking for best partner for your next construction works?</p>
+						</div>
+						<div class="col-xs-12 col-sm-3">
+							<a href="#" class="btn text-center text-uppercase">HIRE US NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+
+
+
+
+
+

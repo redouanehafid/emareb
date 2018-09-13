@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "font-awesome";
+
+.back1 {
+	background-image: image-url("slider-2.jpg");
+}
+.back2 {
+	background-image: image-url("slider-1.jpg");
+}
+.back3 {
+	background-image: image-url("3.png");
+}
+.back4 {
+	background-image: image-url("8.png");
+}
+.back5 {
+	background-color: #FFFAF0;
+}
+.back8 {
+	background-image: image-url("about.jpg");
+}
+.back9 {
+	background-image: image-url("banner-sav.jpg");
+}
+.back10 {
+	background-image: image-url("service.jpg");
+}
+.back11 {
+	background-image: image-url("contact.png");
+}
+.back21 {
+	background-image: image-url("motdg.png");
+}
+
+.back31 {
+	background-image: image-url("builder.jpg");
+}
+.back41 {
+	background-image: image-url("climatisation.jpg");
+}
+.back51 {
+	background-image: image-url("climatisation.jpg");
+}
+
+
+.back21:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.fa-chevron-circle-right {
+	color : #F2613C;
+}
+.fa-circle {
+	color : #F2613C;
+	margin-left: 30px;
+}
+.sizer {
+	height: 80px !important;
+}
+
+
+.btnc {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #F2613C;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.btnc1 {background-color: #e7e7e7;} /* Grey */
+.btnc2 {background-color: #f44336; color: white;} /* Red */ 
+
+
+
+ 

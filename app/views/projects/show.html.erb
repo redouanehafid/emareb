@@ -1,0 +1,84 @@
+
+<%= render 'layouts/menu' %>
+
+
+
+<!-- main container of all the page elements -->
+  
+    <!-- main of the page -->
+    <main id="main">
+      <!-- banner of the page -->
+      <section class="banner bg-full overlay back51">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h1 class="main-heading3 text-uppercase"><%= @project.title %></h1>
+              <!-- breadcrumbs of the page -->
+              <nav class="breadcrumbs text-center">
+                <ul class="list-unstyled">
+                  <li><a href="<%= root_path %>">Acceuil</a></li>
+                  <li>></li>
+                  <li><%= @project.title %></li>
+                  <li><a href="<%= projects_path %>">Projects</a></li>
+                  <li>></li>
+                  <li></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- project detail of the page -->
+      <section class="project-detail style2 container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="img-holder">
+              <%= image_tag @project.image.url(:medium) %>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h3>detail projet</h3>
+            <!-- project list of the page -->
+            <ul class="project-list list-unstyled">
+              <li>Client: <strong><%= @project.client %></strong></li>
+              <li>lieu: <strong><%= @project.lieu %></strong></li>
+              <li>Surface Area: <strong><%= @project.surface %></strong></li>
+              
+              
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h3><%= @project.title %></h3>
+            <p><%= @project.content %></p>
+          </div>
+        </div>
+        
+        
+      </section>
+    </main>
+    <div class="promo-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-9">
+              <p>
+                NOUS OFFRONS UN SERVICE RAPIDE ET ABORDABLE POUR VOS PROJETS!</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <a href="<%= contact_path %>" class="btn text-center text-uppercase">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+

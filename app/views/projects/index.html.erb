@@ -1,0 +1,96 @@
+<%= render 'layouts/menu' %>
+<!-- main of the page -->
+    <main id="main">
+      <!-- banner of the page -->
+      <section class="banner bg-full overlay back9">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h1 class="main-heading3 text-uppercase">Nos References</h1>
+              <!-- breadcrumbs of the page -->
+              <nav class="breadcrumbs text-center">
+                <ul class="list-unstyled">
+                  <li><a href="<%= root_path %>">Acceuil</a></li>
+                  <li>></li>
+                  <li>Projets</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- project sec of the page -->
+      <div class="project-sec style2">
+
+        <div class="container">
+          <% if user_signed_in? %>
+                 <%= link_to 'Ajouter un nouveau projet', new_project_path , class: "btn btn-primary" %>
+              <% end %>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <br>
+              <br>
+              <!-- project holder of the page -->
+              <div class="container">
+              <div class="project-holder">
+                <!-- col of the page -->
+                <% @projects.each do |project| %>
+                  <div class="col overlay building">
+                    <%= image_tag( project.image.url(:thumb), alt: "image description", class: "img-responsive") %>
+                    <div class="over text-center">
+                      <strong class="title text-uppercase"><a href="<%= project_path(project.id)%>"><%= project.title %></a></strong>
+                      <% if user_signed_in? %>
+                         <%= link_to 'Suprimer', project, method: :delete, data: { confirm: 'Are you sure?' } , class:"btn btn-danger" %> <%= link_to 'Modifier', edit_project_path(project) , class:"btn btn-Light"%></td>
+                      <% end %>
+                      <span class="sub-title"></span>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="client-sec container">
+        <div class="row">
+          <div class="col-xs-12 line-box">
+            <div class="col-xs-12 text-center">
+            <h3 class="main-heading">NOS REFERENCES</h3>
+          </div>
+            <!-- client logo of the page -->
+            <ul class="list-unstyled client-logo line ">
+              <li><%= image_tag('r1.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r2.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r3.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r4.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r5.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r6.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r7.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r8.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r9.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+              <li><%= image_tag('r10.jpeg', alt: "image description", class: "img-responsive sizer") %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- promo box of the page -->
+      <div class="promo-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-9">
+              <p>NOUS OFFRONS UN SERVICE RAPIDE ET ABORDABLE POUR VOS PROJETS!</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <a href="#" class="btn text-center text-uppercase">APPELEZ-NOUS MAINTENANT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+

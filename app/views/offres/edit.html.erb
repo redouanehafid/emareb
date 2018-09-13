@@ -1,0 +1,58 @@
+
+
+<%= render 'layouts/menu' %>
+ <!-- main of the page -->
+		<main id="main">
+			<!-- banner of the page -->
+			<section class="banner bg-full overlay" style="background-image: url(http://placehold.it/1920x350);">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h1 class="main-heading3 text-uppercase">Modifier l'offre</h1>
+							<!-- breadcrumbs of the page -->
+							<nav class="breadcrumbs text-center">
+								<ul class="list-unstyled">
+									<li><a href="<%= root_path %>">Acceuil</a></li>
+									<li>></li>
+									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- checkout sec of the page -->
+			<div class="checkout-sec" style="margin-left: 400px;">
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<h2>Modifier l'Offre</h2>
+							<fieldset>
+								<div class="form-group">
+									<%= render 'form', offre: @offre %>								
+								</div>
+							
+
+							</fieldset>
+					</div>
+					
+				</div>
+				
+            </div>
+		
+
+		</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
