@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+# lock "~> 3.11.0"
 
 set :application, "emareb.ma"
 set :repo_url, "/home/git"
