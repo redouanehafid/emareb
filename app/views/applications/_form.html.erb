@@ -7,8 +7,15 @@
   <%= f.input :telephone %>
   <%= f.input :email %>
   <%= f.input :message %>
-  <%= f.file_field :cv %>
-  <%= f.file_field :lettre %>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Lettre de motivation</label>
+    <%= f.file_field :lettre, class: "form-control-file" %>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">CV</label>
+    <%= f.file_field :cv, class: "form-control-file" %>
+  </div>
+  
   <br>
   <%= f.button :submit, class: "btn text-center text-uppercase" %>
 <% end %>
