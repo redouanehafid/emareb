@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  resources :offres
+  
   devise_for :users
   resources :projects
   resources :applications
