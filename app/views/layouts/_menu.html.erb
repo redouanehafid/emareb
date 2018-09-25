@@ -7,8 +7,8 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<ul class="contact-list list-unstyled">
-								<li><i><%= fa_icon "phone" %></i>066115 5615</li>
-								<li><i><%= fa_icon "envelope" %></i>emarebmaroc@gmail.com</li>
+								<li><i><%= fa_icon "phone" %></i>+212 6 61 15 56 15</li>
+								<li><i><%= fa_icon "envelope" %></i> emarebmaroc@gmail.com</li>
 							</ul>
 							<ul class="sign-up list-unstyled">
 								<% if user_signed_in? %>
@@ -67,7 +67,7 @@
 											</li>
 											<li><a href="<%= climatisation_path %>">Climatisation</a></li>
 											<li><a href="<%= instalation_path %>">Installation</a></li>
-											<li><a href="<%= maintenance_path %>">Maintenance</a>
+											<li><a href="<%= maintenance_path %>">Toujours proche de vos projets</a>
 											<li><a href="<%= maintenancep_path %>">Maintenance préventive</a>
 											<li><a href="<%= maintenancec_path %>">Maintenance curative</a>
 											</li>
@@ -75,7 +75,7 @@
 								
 							</li>
 							<li class= <%="active" if yield(:titre) == "projets" %>>
-								<a href="<%= projects_path %>">NOS REFERENCES</a>
+								<a href="<%= projects_path %>">NOS PROJETS</a>
 								
 							</li>
 							<li class= <%="active" if yield(:titre) == "nous" %>>
