@@ -78,19 +78,7 @@
 		
 		<div class="popup-holder">
 		<div id="popup1" class="lightbox">
-			<%= form_for(:user, :html => {class: 'signup-form text-center' }, :url => session_path(:user)) do |f| %>
-				<fieldset>
-					<h2>Connectez-vous <span class="clr">EMARéB</span></h2>
-					<p>Entrez vos coordonnées ci-dessous.</p>
-					<div class="form-group">
-						<%= f.text_field :email, :class =>"form-control",placeholder: "Email", value:"" %>
-						<%= f.password_field :password,:label =>"Password", :class =>"form-control", placeholder:"Password", value:""%>
-					</div>
-					 <%= f.submit 'Login', :class =>"btn text-center text-uppercase" %><br>
-		          	 <%= f.check_box :remember_me, label: "Remember me", value: "true" %>
-		          	 <%= f.label :remember_me %>
-				</fieldset>
-			<% end %>
+			
 		</div>
 	</div>
 
