@@ -45,7 +45,7 @@
 								<ul class="list-unstyled">
 
 							
-							<li class="active">
+							<li class= <%="active" if yield(:titre) == "about" %>>
 										<a href="#">A PROPOS</a>
 										<ul class="list-unstyled drop-down">
 											<li>
@@ -55,8 +55,8 @@
 											<li><a href="<%= about_path(page:"vos-benefices") %>">VOS BENEFICES</a></li>
 										</ul>
 							</li>
-							<li><a href="<%= motdg_path %>">MOT DU DG</a></li>
-							<li>
+							<li class= <%="active" if yield(:titre) == "motdg" %>><a href="<%= motdg_path %>">MOT DU DG</a></li>
+							<li class= <%="active" if yield(:titre) == "nosmetiers" %>>
 								<a href="<%= nosmetiers_path %>">Nos Metiers</a>
 								<ul class="list-unstyled drop-down">
 											<li>
@@ -74,11 +74,11 @@
 										</ul>
 								
 							</li>
-							<li>
+							<li class= <%="active" if yield(:titre) == "projets" %>>
 								<a href="<%= projects_path %>">NOS REFERENCES</a>
 								
 							</li>
-							<li>
+							<li class= <%="active" if yield(:titre) == "nous" %>>
 								<a href="#">Nous Rejoindre</a>
 								<ul class="list-unstyled drop-down">
 											<li>
@@ -94,7 +94,7 @@
 								
 							</li>
 							
-							<li><a href="<%= contact_path %>">Contact </a></li>
+							<li class= <%="active" if yield(:titre) == "contact" %>><a href="<%= contact_path %>">Contact </a></li>
 
 
 
