@@ -2314,7 +2314,7 @@ a:hover, a:focus, a.active {
 }
 
 .promo-box.style2 p {
-  padding: 12px 0 0;
+  padding: 0px 0 0;
 }
 
 .promo-box.style3 {
@@ -2324,7 +2324,7 @@ a:hover, a:focus, a.active {
 }
 
 .promo-box.style3 p {
-  padding: 10px 0 0;
+  padding: 0px 0 0;
 }
 
 .promo-box.style3 .btn {
