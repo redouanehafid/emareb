@@ -25,7 +25,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-8">
 						<div class="img-holder">
-							<img src="http://placehold.it/770x330" alt="image description" class="img-responsive">
+							<%= image_tag('mp.jpg', alt: "image description", class: "img-responsive") %>
 						</div>
 						<h2>Maintenance préventive</h2>
 						<span class="fst">La maintenance préventive constitue l’ensemble des opérations visant à maintenir un équipement, un ensemble d’équipements en état de bon fonctionnement et de réduire son taux de défaillance.<br>Notre équipe Maintenance et Services est qualifiée techniquement et habilitée pour intervenir <br>en environnements contrôlés mais aussi en milieux variés tels que l’hôtellerie, les centres de formation, les espaces collectifs, ...</span>
@@ -38,8 +38,7 @@
 								<li><a href="<%= prestation_path %>">Prestations Facility Management </a></li>
 								<li><a href="<%= climatisation_path %>">Climatisation</a></li>
 								<li><a href="<%= instalation_path %>">Installation</a></li>
-								<li><a href="<%= maintenance_path %>">Maintenance</a></li>
-								<li><a href="<%= maintenancep_path %>">Maintenance préventive</a></li>
+								<li><a href="<%= maintenance_path %>">Toujours proche de vos projets</a></li>
 								<li><a href="<%= maintenancec_path %>">Maintenance curative</a></li>
 							</ul>
 						</div>

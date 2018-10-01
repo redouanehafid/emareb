@@ -1,4 +1,4 @@
-<%= render 'layouts/menu' %>
+1<%= render 'layouts/menu' %>
 <main id="main">
 			<!-- banner of the page -->
 			<section class="banner bg-full overlay back2">
@@ -25,7 +25,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-8">
 						<div class="img-holder">
-							<img src="http://placehold.it/770x330" alt="image description" class="img-responsive">
+							<%= image_tag('ins.jpg', alt: "image description", class: "img-responsive") %>
 						</div>
 						<h2>Installation</h2>
 						<span class="fst">Une équipe hautement qualifiée, regroupant ingénieurs, techniciens, dessinateurs et monteurs, est à votre service afin d'étudier et d'installer des systèmes de chauffage, de ventilation et de climatisation dans tous types d'immeubles résidentiels ou industriels.<br>Nos experts vous conseilleront sur les équipements les mieux adaptés. Quel que soit le type d'installation, </span>
@@ -37,8 +37,7 @@
 								<li><a href="<%= facility_path %>">Facility Management</a></li>
 								<li><a href="<%= prestation_path %>">Prestations Facility Management </a></li>
 								<li><a href="<%= climatisation_path %>">Climatisation</a></li>
-								<li><a href="<%= instalation_path %>">Installation</a></li>
-								<li><a href="<%= maintenance_path %>">Maintenance</a></li>
+								<li><a href="<%= maintenance_path %>">Toujours proche de vos projets</a></li>
 								<li><a href="<%= maintenancep_path %>">Maintenance préventive</a></li>
 								<li><a href="<%= maintenancec_path %>">Maintenance curative</a></li>
 							</ul>
