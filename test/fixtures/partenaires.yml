@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Partenaire: MyString
+  title: MyString
+
+two:
+  Partenaire: MyString
+  title: MyString

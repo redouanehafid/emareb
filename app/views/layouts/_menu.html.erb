@@ -78,6 +78,10 @@
 								<a href="<%= projects_path %>">NOS PROJETS</a>
 								
 							</li>
+							<li class= <%="active" if yield(:titre) == "partenaires" %>>
+								<a href="<%= partenaires_path %>">NOS PARTENAIRES</a>
+								
+							</li>
 							<li class= <%="active" if yield(:titre) == "nous" %>>
 								<a href="#">Nous Rejoindre</a>
 								<ul class="list-unstyled drop-down">
