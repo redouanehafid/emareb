@@ -221,7 +221,7 @@ a:hover, a:focus, a.active {
 }
 
 #header.style3 #nav ul > li > a {
-  color: #111;
+  color: #0E3B5E;
 }
 
 #header.style4 .contact-list .icon {
@@ -266,7 +266,7 @@ a:hover, a:focus, a.active {
   float: left;
   overflow: hidden;
   margin: 0;
-  color: #111;
+  color: #0E3B5E;
 }
 
 #header .contact-list li {
@@ -723,7 +723,7 @@ a:hover, a:focus, a.active {
 .main-heading2 {
   font-size: 30px;
   line-height: 32px;
-  color: #111;
+  color: #0E3B5E;
   font-weight: 700;
   margin: 0 0 12px;
 }
@@ -1522,7 +1522,7 @@ a:hover, a:focus, a.active {
   min-height: 460px;
   font-size: 16px;
   line-height: 28px;
-  color: #555; 
+  color: #0E3B5E; 
 }
 
 .help-sec .holder {
@@ -1762,7 +1762,7 @@ a:hover, a:focus, a.active {
 .blog-sec .blog .read-more {
   font-size: 12px;
   line-height: 14px;
-  color: #111;
+  color: #0E3B5E;
   font-weight: 700;
   transition: all 0.25s linear;
   text-decoration: underline;
@@ -2299,7 +2299,7 @@ a:hover, a:focus, a.active {
   padding: 45px 0;
   font-size: 24px;
   line-height: 26px;
-  color: #111;
+  color: #0E3B5E;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -2665,7 +2665,7 @@ a:hover, a:focus, a.active {
   overflow: hidden;
   padding-top: 95px;
   padding-bottom: 85px;
-  color: #111;
+  color: #0E3B5E;
 }
 
 .contact-sec.style2 {
@@ -2711,7 +2711,7 @@ a:hover, a:focus, a.active {
 .contact-sec h3 {
   font-size: 24px;
   line-height: 26px;
-  color: #111;
+  color: #F2613C;
   font-weight: 700;
   margin: 0 0 41px;
 }
@@ -2727,7 +2727,7 @@ a:hover, a:focus, a.active {
 .contact-sec .contact-list {
   overflow: hidden;
   margin: 0 0 25px;
-  color: #555;
+  color: #0E3B5E;
   padding: 0 0 12px;
   position: relative;
 }
@@ -2768,14 +2768,14 @@ a:hover, a:focus, a.active {
 .contact-sec .contact-list a {
   display: inline-block;
   vertical-align: top;
-  color: #555;
+  color: #0E3B5E;
   transition: all 0.25s linear;
 }
 
 .contact-sec .hour-list {
   overflow: hidden;
   margin: 0;
-  color: #555;
+  color: #0E3B5E;
 }
 
 .contact-sec .hour-list li {
@@ -3531,7 +3531,7 @@ a:hover, a:focus, a.active {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  color: #111;
+  color: #0E3B5E;
   display: block;
   border: 1px solid #e7e7e7;
   padding: 13px 27px 16px 30px;
@@ -3793,7 +3793,7 @@ a:hover, a:focus, a.active {
 .work-sec .work-slider .slide h4 {
   font-size: 18px;
   line-height: 20px;
-  color: #111;
+  color: #F2613C;
   font-weight: 700;
   margin: 0 0 16px;
 }
