@@ -1,3 +1,4 @@
+<div class="checkout-sec">
 <%= simple_form_for @application do |f| %>
   <%= f.input :nom %>
   <%= f.input :prenom %>
@@ -17,5 +18,8 @@
   </div>
   
   <br>
+  
   <%= f.button :submit, class: "btn text-center text-uppercase" %>
+
 <% end %>
+</div>

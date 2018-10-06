@@ -30,6 +30,7 @@ gem "font-awesome-rails"
 gem 'devise', '~> 4.5'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
+gem 'rails-i18n', '~> 5.1'
 
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'

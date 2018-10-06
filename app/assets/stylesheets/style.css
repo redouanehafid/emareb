@@ -2532,7 +2532,7 @@ a:hover, a:focus, a.active {
 
 .widget .side-nav a {
   display: block;
-  color: #111;
+  color: #0E3B5E;
   padding: 4px 0 7px 28px;
   transition: all 0.25s linear;
 }
@@ -2546,13 +2546,13 @@ a:hover, a:focus, a.active {
 .widget h3 {
   font-size: 24px;
   line-height: 26px;
-  color: #111;
+  color: #0E3B5E;
   font-weight: 700;
   margin: 0 0 36px;
 }
 
 .widget .widget-nav {
-  color: #111;
+  color: #0E3B5E;
   line-height: 36px;
   overflow: hidden;
   margin: 0 0 46px;
@@ -2564,7 +2564,7 @@ a:hover, a:focus, a.active {
 
 .widget .widget-nav a {
   display: block;
-  color: #111;
+  color: #0E3B5E;
   transition: all 0.25s linear;
 }
 
@@ -2573,7 +2573,7 @@ a:hover, a:focus, a.active {
 }
 
 .widget .tags-list {
-  color: #111;
+  color: #0E3B5E;
   overflow: hidden;
   margin: 0;
 }
@@ -2585,7 +2585,7 @@ a:hover, a:focus, a.active {
 
 .widget .tags-list a {
   display: block;
-  color: #111;
+  color: #0E3B5E;
   padding: 3px 17px 3px 18px;
   border: 1px solid #111;
   transition: all 0.25s linear;
@@ -2613,7 +2613,7 @@ a:hover, a:focus, a.active {
 .widget .pro-list .txt-holder {
   width: 82%;
   float: left;
-  color: #555;
+  color: #0E3B5E;
   overflow: hidden;
   padding: 2px 0 0 19px;
 }

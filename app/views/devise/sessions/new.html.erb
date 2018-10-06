@@ -1,6 +1,33 @@
-<h2>Log in</h2>
+
+      <!-- header area of the page -->
+      <%= render 'layouts/menu' %>
+    <!-- main of the page -->
+    <main id="main">
+      <!-- banner of the page -->
+      <section class="banner bg-full overlay back8">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h1 class="main-heading3 text-uppercase">Connection</h1>
+              <nav class="breadcrumbs text-center">
+                <ul class="list-unstyled">
+                  <li><a href="<%= root_path %>">Acceuil</a></li>
+                  <li>></li>
+                  <li>Compte</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <div class="container">
+
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="checkout-sec">
+  <h2>Connection</h2>
   <div class="form-inputs">
     <%= f.input :email,
                 required: false,
@@ -15,5 +42,7 @@
   <div class="form-actions">
     <%= f.button :submit, "Log in" %>
   </div>
+</div>
 <% end %>
 
+</div>
