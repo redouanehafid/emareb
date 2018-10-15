@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+
+  layout "applicationforpol", only: [:confidentialite]
   
   def index
   end
@@ -38,6 +40,9 @@ class PagesController < ApplicationController
   end
   
   def politique
+  end
+
+  def confidentialite
   end
 
   

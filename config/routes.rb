@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get 'maintenancep' => 'pages#maintenancep'
   get 'maintenancec' => 'pages#maintenancec'
   get 'politique' => 'pages#politique'
+  get 'confidentialite' => 'pages#confidentialite'
   
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
